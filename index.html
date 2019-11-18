@@ -48,7 +48,16 @@
       </div>
     </nav>
 
-    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image: url(img/b15_cropped.png);" data-section="home" data-stellar-background-ratio="0.5">
+    <style>
+      .landing-session{
+        background-image: url(img/bg1.png)
+      }
+
+    </style>
+    
+    
+
+    <section id="landing-section" class="landing-session probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" data-section="home" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row intro-text">
           <div class="col-md-8 col-md-offset-2 text-center">
@@ -67,6 +76,25 @@
       </div>
     </section>
 
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms * 1000));
+        }
+
+        let backgroundImages = ["img/bg2.png", "img/bg3.png", "img/bg4.png", "img/bg5.png", "img/bg6.png", "img/bg99.png"]
+        
+
+        async function updateBackground(index) {
+          sleep(5).then(function(value) {
+            let image = backgroundImages[index]
+            document.getElementById("landing-section").style = "background-image: url(" + image + ")"
+            updateBackground((index + 1) % backgroundImages.length)
+          });
+          
+        }
+  
+        updateBackground(1);
+      </script>
 
     <section class="probootstrap-section probootstrap-bg-light" id="events" data-section="events">
       <div class="container">
@@ -98,6 +126,7 @@
           <div class="row">
           <!-- <div class="col-md-6"> -->
             <div class="col-md-3">
+              
                 <div class="probootstrap-service-item probootstrap-animate" data-animate-effect="fadeIn">
                   <a href="https://twitter.com/huskies4bernie">
                     <span class="icon icon-twitter"></span>

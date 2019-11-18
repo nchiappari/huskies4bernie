@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: 'Bernie';
+  src: url('fonts/icomoon/fonts/Jubilat-Bold.eot');
+  src: url('fonts/icomoon/fonts/Jubilat-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/icomoon/fonts/Jubilat-Bold.svg#Jubilat-Bold') format('svg'),
+       url('fonts/icomoon/fonts/Jubilat-Bold.ttf') format('truetype'),
+       url('fonts/icomoon/fonts/Jubilat-Bold.woff') format('woff'),
+       url('fonts/icomoon/fonts/Jubilat-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
